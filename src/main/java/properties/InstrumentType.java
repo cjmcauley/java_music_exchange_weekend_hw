@@ -1,6 +1,6 @@
 package properties;
 
-public enum Type {
+public enum InstrumentType {
 
     ACOUSTIC,
     ELECTRIC;
