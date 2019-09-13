@@ -10,4 +10,12 @@ public class Violin extends Instrument {
         super(model, family, colour, material, purchasePrice, retailPrice);
         this.strings = strings;
     }
+
+    public int getStrings() {
+        return strings;
+    }
+
+    public void setStrings(int strings) {
+        this.strings = strings;
+    }
 }

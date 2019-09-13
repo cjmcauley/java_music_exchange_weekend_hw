@@ -13,4 +13,20 @@ public class Drums extends Instrument {
         this.noOfDrums = noOfDrums;
         this.type = type;
     }
+
+    public int getNoOfDrums() {
+        return noOfDrums;
+    }
+
+    public void setNoOfDrums(int noOfDrums) {
+        this.noOfDrums = noOfDrums;
+    }
+
+    public InstrumentType getType() {
+        return type;
+    }
+
+    public void setType(InstrumentType type) {
+        this.type = type;
+    }
 }

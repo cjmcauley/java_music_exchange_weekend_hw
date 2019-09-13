@@ -10,4 +10,12 @@ public class Piano extends Instrument {
         super(model, family, colour, material, purchasePrice, retailPrice);
         this.keys = keys;
     }
+
+    public int getKeys() {
+        return keys;
+    }
+
+    public void setKeys(int keys) {
+        this.keys = keys;
+    }
 }

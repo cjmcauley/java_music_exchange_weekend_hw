@@ -13,4 +13,20 @@ public class Guitar extends Instrument {
         this.strings = strings;
         this.type = type;
     }
+
+    public int getStrings() {
+        return strings;
+    }
+
+    public void setStrings(int strings) {
+        this.strings = strings;
+    }
+
+    public InstrumentType getType() {
+        return type;
+    }
+
+    public void setType(InstrumentType type) {
+        this.type = type;
+    }
 }
