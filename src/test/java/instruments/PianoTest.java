@@ -13,7 +13,7 @@ public class PianoTest {
 
     @Before
     public void setUp() {
-        piano = new Piano("Steinway", InstrumentFamily.PERCUSSION, "Black", "Wood", 800, 1950, 88);
+        piano = new Piano("Steinway", InstrumentFamily.PERCUSSION, "Black", "Wood", 800, 1950, "Ting", 88);
     }
 
     @Test
@@ -41,10 +41,14 @@ public class PianoTest {
         assertEquals(800, piano.getPurchasePrice());
     }
 
-
     @Test
     public void canGetInstrumentRetailPrice() {
         assertEquals(1950, piano.getRetailPrice());
+    }
+
+    @Test
+    public void canGetInstrumentSound() {
+        assertEquals("Ting", piano.getSound());
     }
 
     @Test

@@ -12,7 +12,7 @@ public class ViolinTest {
 
     @Before
     public void setUp(){
-        violin = new Violin("Stentor", InstrumentFamily.STRING, "Brown", "Wood", 195, 475, 6);
+        violin = new Violin("Stentor", InstrumentFamily.STRING, "Brown", "Wood", 195, 475,"Phmmm", 6);
     }
 
     @Test
@@ -40,10 +40,14 @@ public class ViolinTest {
         assertEquals(195, violin.getPurchasePrice());
     }
 
-
     @Test
     public void canGetInstrumentRetailPrice() {
         assertEquals(475, violin.getRetailPrice());
+    }
+
+    @Test
+    public void canGetInstrumentSound() {
+        assertEquals("Phmmm", violin.getSound());
     }
 
     @Test

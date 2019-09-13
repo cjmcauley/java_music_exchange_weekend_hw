@@ -6,8 +6,8 @@ public class Piano extends Instrument {
 
     private int keys;
 
-    public Piano(String model, InstrumentFamily family, String colour, String material, int purchasePrice, int retailPrice, int keys) {
-        super(model, family, colour, material, purchasePrice, retailPrice);
+    public Piano(String model, InstrumentFamily family, String colour, String material, int purchasePrice, int retailPrice, String sound, int keys) {
+        super(model, family, colour, material, purchasePrice, retailPrice, sound);
         this.keys = keys;
     }
 

@@ -13,7 +13,7 @@ public class DrumsTest {
 
     @Before
     public void setUp() {
-        drums = new Drums("Tama", InstrumentFamily.PERCUSSION, "Red", "Wood", 299, 650, 7, InstrumentType.ACOUSTIC);
+        drums = new Drums("Tama", InstrumentFamily.PERCUSSION, "Red", "Wood", 299, 650,"Boom", 7, InstrumentType.ACOUSTIC);
     }
 
     @Test
@@ -41,17 +41,20 @@ public class DrumsTest {
         assertEquals(299, drums.getPurchasePrice());
     }
 
-
     @Test
     public void canGetInstrumentRetailPrice() {
         assertEquals(650, drums.getRetailPrice());
     }
 
     @Test
+    public void canGetInstrumentSound() {
+        assertEquals("Boom", drums.getSound());
+    }
+
+    @Test
     public void canGetNoOfDrums() {
         assertEquals(7, drums.getNoOfDrums());
     }
-
 
     @Test
     public void canGetInstrumentType() {
