@@ -56,10 +56,14 @@ public class GuitarTest {
         assertEquals(6, guitar.getStrings());
     }
 
-
     @Test
     public void canGetInstrumentType() {
         assertEquals(InstrumentType.ELECTRIC, guitar.getType());
+    }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Strum, that sounds like a guitar", guitar.play());
     }
 
 }

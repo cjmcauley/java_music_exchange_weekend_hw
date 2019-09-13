@@ -29,4 +29,8 @@ public class Guitar extends Instrument {
     public void setType(InstrumentType type) {
         this.type = type;
     }
+
+    public String play() {
+        return getSound() + ", that sounds like a guitar";
+    }
 }

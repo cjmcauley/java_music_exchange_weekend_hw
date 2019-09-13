@@ -1,9 +1,10 @@
 package instruments;
 
+import behaviours.IPlay;
 import properties.InstrumentFamily;
 import properties.InstrumentType;
 
-public class Drums extends Instrument {
+public class Drums extends Instrument implements IPlay {
 
     private int noOfDrums;
     private InstrumentType type;
@@ -28,5 +29,9 @@ public class Drums extends Instrument {
 
     public void setType(InstrumentType type) {
         this.type = type;
+    }
+
+    public String play() {
+        return getSound() + ", that sounds like a drum";
     }
 }

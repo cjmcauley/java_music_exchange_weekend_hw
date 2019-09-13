@@ -55,4 +55,9 @@ public class ViolinTest {
         assertEquals(6, violin.getStrings());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("Phmmm, that sounds like a violin", violin.play());
+    }
+
 }

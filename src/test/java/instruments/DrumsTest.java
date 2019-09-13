@@ -60,4 +60,9 @@ public class DrumsTest {
     public void canGetInstrumentType() {
         assertEquals(InstrumentType.ACOUSTIC, drums.getType());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Boom, that sounds like a drum", drums.play());
+    }
 }

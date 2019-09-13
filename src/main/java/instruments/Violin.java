@@ -18,4 +18,8 @@ public class Violin extends Instrument {
     public void setStrings(int strings) {
         this.strings = strings;
     }
+
+    public String play() {
+        return getSound() + ", that sounds like a violin";
+    }
 }

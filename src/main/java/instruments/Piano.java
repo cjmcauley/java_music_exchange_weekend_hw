@@ -18,4 +18,8 @@ public class Piano extends Instrument {
     public void setKeys(int keys) {
         this.keys = keys;
     }
+
+    public String play() {
+        return getSound() + ", that sounds like a piano";
+    }
 }
