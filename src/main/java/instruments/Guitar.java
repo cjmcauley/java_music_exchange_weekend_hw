@@ -1,9 +1,10 @@
 package instruments;
 
+import behaviours.IPlay;
 import properties.InstrumentFamily;
 import properties.InstrumentType;
 
-public class Guitar extends Instrument {
+public class Guitar extends Instrument implements IPlay {
 
     private int strings;
     private InstrumentType type;

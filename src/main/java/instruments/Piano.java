@@ -1,8 +1,9 @@
 package instruments;
 
+import behaviours.IPlay;
 import properties.InstrumentFamily;
 
-public class Piano extends Instrument {
+public class Piano extends Instrument implements IPlay {
 
     private int keys;
 
