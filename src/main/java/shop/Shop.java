@@ -1,5 +1,6 @@
 package shop;
 
+import instruments.Drums;
 import instruments.Instrument;
 
 import java.util.ArrayList;
@@ -32,5 +33,13 @@ public class Shop {
 
     public int stockCount(){
         return getInstruments().size();
+    }
+
+    public void addStock(Instrument instrument) {
+        instruments.add(instrument);
+    }
+
+    public void removeStock(Instrument instrument) {
+        instruments.remove(instrument);
     }
 }
