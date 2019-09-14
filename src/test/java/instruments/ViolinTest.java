@@ -60,4 +60,8 @@ public class ViolinTest {
         assertEquals("Phmmm, that sounds like a violin", violin.play());
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(280, violin.calculateMarkup());
+    }
 }
