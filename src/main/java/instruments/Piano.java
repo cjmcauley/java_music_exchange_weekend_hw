@@ -1,9 +1,10 @@
 package instruments;
 
 import behaviours.IPlay;
+import behaviours.ISell;
 import properties.InstrumentFamily;
 
-public class Piano extends Instrument implements IPlay {
+public class Piano extends Instrument implements IPlay, ISell {
 
     private int keys;
 
@@ -22,5 +23,9 @@ public class Piano extends Instrument implements IPlay {
 
     public String play() {
         return getSound() + ", that sounds like a piano";
+    }
+
+    public int calculateMarkup() {
+        return getRetailPrice() - getPurchasePrice();
     }
 }

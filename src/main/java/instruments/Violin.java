@@ -1,9 +1,10 @@
 package instruments;
 
 import behaviours.IPlay;
+import behaviours.ISell;
 import properties.InstrumentFamily;
 
-public class Violin extends Instrument implements IPlay {
+public class Violin extends Instrument implements IPlay, ISell {
 
     private int strings;
 
@@ -22,5 +23,9 @@ public class Violin extends Instrument implements IPlay {
 
     public String play() {
         return getSound() + ", that sounds like a violin";
+    }
+
+    public int calculateMarkup() {
+        return getRetailPrice() - getPurchasePrice();
     }
 }
