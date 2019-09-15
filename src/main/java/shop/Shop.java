@@ -1,5 +1,6 @@
 package shop;
 
+import behaviours.ISell;
 import instruments.Drums;
 import instruments.Instrument;
 
@@ -41,5 +42,13 @@ public class Shop {
 
     public void removeStock(Instrument instrument) {
         instruments.remove(instrument);
+    }
+
+    public int potentialProfit() {
+        int profit = 0;
+        for(Instrument instrument  : this.instruments) {
+            profit += instrument.calculateMarkup();
+        }
+        return profit;
     }
 }

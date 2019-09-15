@@ -77,5 +77,9 @@ public abstract class Instrument {
     public void setRetailPrice(int retailPrice) {
         this.retailPrice = retailPrice;
     }
+
+    public int calculateMarkup() {
+        return getRetailPrice() - getPurchasePrice();
+    }
 }
 

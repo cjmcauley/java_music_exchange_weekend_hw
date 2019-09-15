@@ -49,4 +49,12 @@ public class ShopTest {
         assertEquals(drums, shop.getInstruments().get(0));
     }
 
+    @Test
+    public void calculateTotalProfit() {
+        shop.addStock(drums);
+        shop.addStock(guitar);
+        assertEquals(2, shop.stockCount());
+        assertEquals(626, shop.potentialProfit());
+    }
+
 }
